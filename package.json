@@ -1,0 +1,33 @@
+{
+  "name": "valhalla-mongodb",
+  "version": "1.0.0",
+  "description": "Apartment management system with MongoDB and MySQL",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "setup": "node scripts/setup-mongodb.js",
+    "migrate": "node scripts/migrate-from-sql.js",
+    "seed": "node complete-spanish-seed.js",
+    "test-seed": "node test-seed.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": ["mongodb", "apartment", "management", "node", "express"],
+  "author": "artbaddon",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "mysql2": "^3.6.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.4",
+    "joi": "^17.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
